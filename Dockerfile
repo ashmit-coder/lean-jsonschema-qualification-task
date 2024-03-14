@@ -15,4 +15,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["lean","test.lean","--run"]
+CMD ["lean","lean-jsonschema.lean","--run"]
