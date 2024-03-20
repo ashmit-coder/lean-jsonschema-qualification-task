@@ -15,4 +15,6 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["lean","lean-jsonschema.lean","--run"]
+RUN lake build
+
+CMD ["./.lake/build/bin/bowtie-jsonschema"]
